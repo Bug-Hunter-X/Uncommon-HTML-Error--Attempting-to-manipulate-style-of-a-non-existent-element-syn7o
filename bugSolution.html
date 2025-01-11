@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    const element = document.getElementById("myDiv");
+    // Correct way to hide an element; handles the case where the element is not found.
+    if (element) {
+        element.style.display = "none";
+    }
+  </script>
+</body>
+</html>
